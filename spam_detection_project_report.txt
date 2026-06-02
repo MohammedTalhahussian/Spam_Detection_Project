@@ -1,0 +1,45 @@
+
+Short Report: Spam Detection using Machine Learning
+
+Introduction
+This project focuses on building a supervised machine learning model for spam message classification. The dataset contains SMS messages labeled as spam or ham (non-spam). The objective is to classify messages accurately using machine learning algorithms.
+
+Data Preprocessing
+- Loaded the dataset using Pandas
+- Selected relevant columns from the dataset
+- Renamed columns for better readability
+- Converted categorical labels:
+  ham → 0
+  spam → 1
+- Applied TF-IDF Vectorization
+- Split the dataset into training and testing sets
+
+Models Used
+
+1. Logistic Regression
+Logistic Regression is a linear classification algorithm suitable for binary classification problems.
+
+2. Random Forest Classifier
+Random Forest is an ensemble learning algorithm that combines multiple decision trees.
+
+Evaluation Metrics
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- ROC-AUC Score
+- Cross Validation Accuracy
+
+Results
+Logistic Regression achieved high accuracy with fast execution time.
+Random Forest provided strong prediction performance with slightly higher computational cost.
+
+Model Selection
+Logistic Regression was selected as the preferred model because of:
+- High accuracy
+- Fast performance
+- Efficient handling of TF-IDF features
+- Stable cross-validation results
+
+Conclusion
+The project successfully demonstrated spam message classification using supervised machine learning techniques. Logistic Regression and Random Forest both performed well, with Logistic Regression selected as the final model.
